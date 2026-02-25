@@ -27,6 +27,11 @@
 .logo {
   border-radius: 6px;
   object-fit: cover;
+  transition: transform 0.65s ease;
+}
+
+.brand:hover .logo {
+  transform: rotate(360deg);
 }
 
 .brandName {
