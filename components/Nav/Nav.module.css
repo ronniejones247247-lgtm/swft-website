@@ -22,16 +22,18 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  perspective: 400px;
 }
 
 .logo {
   border-radius: 6px;
   object-fit: cover;
-  transition: transform 0.65s ease;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
 }
 
 .brand:hover .logo {
-  transform: rotate(360deg);
+  transform: rotateY(360deg);
 }
 
 .brandName {
