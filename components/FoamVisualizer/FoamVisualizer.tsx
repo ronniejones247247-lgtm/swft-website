@@ -180,12 +180,23 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
   );
 }
 
+const FOAM_GRADES = [
+  { value: '',               label: 'Select a grade…' },
+  { value: 'Standard Foam',      label: 'Standard Foam' },
+  { value: 'High Density Foam',  label: 'High Density Foam' },
+  { value: 'High Resilience Foam', label: 'High Resilience Foam' },
+  { value: 'Memory Foam',        label: 'Memory Foam' },
+  { value: 'Closed Cell Foam',   label: 'Closed Cell Foam' },
+  { value: 'Other / Not Sure',   label: 'Other / Not Sure' },
+];
+
 // ─── Main Component ────────────────────────────────────────────────────────────
 export default function FoamVisualizer() {
   const [length, setLength] = useState('24');
   const [width,  setWidth]  = useState('24');
   const [height, setHeight] = useState('4');
   const [unit,   setUnit]   = useState<Unit>('in');
+  const [grade,  setGrade]  = useState('');
   const [animKey, setAnimKey] = useState(0);
 
   // Parse to inches (always)
@@ -275,6 +286,18 @@ export default function FoamVisualizer() {
               <input type="number" min="0.1" step="0.5" value={height}
                 onChange={handleChange(setHeight)} className={styles.input} placeholder="e.g. 4" />
             </label>
+            <label className={styles.inputLabel}>
+              Foam Grade
+              <select
+                value={grade}
+                onChange={e => setGrade(e.target.value)}
+                className={styles.select}
+              >
+                {FOAM_GRADES.map(g => (
+                  <option key={g.value} value={g.value}>{g.label}</option>
+                ))}
+              </select>
+            </label>
           </div>
 
           {/* Stats */}
@@ -290,6 +313,12 @@ export default function FoamVisualizer() {
                 </span>
                 <span className={styles.statLbl}>L &times; W &times; T (inches)</span>
               </div>
+              {grade && (
+                <div className={styles.stat}>
+                  <span className={`${styles.statVal} ${styles.statGrade}`}>{grade}</span>
+                  <span className={styles.statLbl}>Foam Grade</span>
+                </div>
+              )}
             </div>
           )}
 
