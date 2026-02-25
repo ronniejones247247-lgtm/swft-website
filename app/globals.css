@@ -1,0 +1,75 @@
+:root {
+  --navy: #1a2b6b;
+  --navy-dark: #111e4e;
+  --teal: #3d8b78;
+  --teal-light: #4da892;
+  --cream: #f5e6c8;
+  --cream-dark: #e8d4a8;
+  --white: #ffffff;
+  --gray-light: #f0f2f5;
+  --gray-mid: #9aa0b0;
+  --gray-dark: #4a5060;
+  --text: #1c2235;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-body {
+  font-size: 1.05rem;
+  color: var(--gray-dark);
+  max-width: 640px;
+}

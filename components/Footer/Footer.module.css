@@ -1,0 +1,177 @@
+/* Contact Section */
+.contact {
+  padding: 6rem 2.5rem;
+  background: var(--gray-light);
+}
+
+.contactInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contactTitle {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.contactSub {
+  font-size: 1rem;
+  color: var(--gray-dark);
+  line-height: 1.7;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.formInput,
+.formTextarea {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #d0d5e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: var(--teal);
+}
+
+.submitBtn {
+  padding: 0.85rem 2rem;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-start;
+}
+
+.submitBtn:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: var(--navy-dark);
+  padding: 2.5rem 2.5rem;
+}
+
+.footerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footerLogo {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.footerName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footerTagline {
+  font-size: 0.72rem;
+  color: var(--teal-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footerLinks a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+  color: var(--white);
+}
+
+.footerCopy {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+}
+
+@media (max-width: 820px) {
+  .contact {
+    padding: 4rem 1.25rem;
+  }
+
+  .contactInner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .submitBtn {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 2rem 1.25rem;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}

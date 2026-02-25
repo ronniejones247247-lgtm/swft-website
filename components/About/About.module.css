@@ -1,0 +1,128 @@
+.section {
+  padding: 6rem 2.5rem;
+  background: var(--white);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Image side */
+.imageSide {
+  position: relative;
+}
+
+.imgFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(26,43,107,0.18);
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.accentCard {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.25rem 1.75rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  box-shadow: 0 12px 32px rgba(26,43,107,0.25);
+}
+
+.accentVal {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--teal-light);
+  line-height: 1;
+}
+
+.accentLbl {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Text side */
+.textSide {
+  padding-bottom: 1rem;
+}
+
+.body {
+  font-size: 1rem;
+  color: var(--gray-dark);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* Stats */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.25rem 1.25rem;
+  background: var(--gray-light);
+  border-radius: 10px;
+  border-left: 4px solid var(--teal);
+}
+
+.statVal {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.statLbl {
+  font-size: 0.82rem;
+  color: var(--gray-mid);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 820px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageSide {
+    order: -1;
+  }
+
+  .accentCard {
+    right: 1rem;
+    bottom: -1rem;
+  }
+
+  .imgFrame {
+    aspect-ratio: 16 / 9;
+  }
+}

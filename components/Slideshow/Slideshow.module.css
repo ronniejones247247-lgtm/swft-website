@@ -1,0 +1,157 @@
+.section {
+  padding: 6rem 2.5rem;
+  background: var(--gray-light);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Slideshow */
+.slideshowWrapper {
+  position: relative;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(26, 43, 107, 0.2);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideActive {
+  opacity: 1;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+  animation: kenBurns 11s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurns {
+  from { transform: scale(1.03); }
+  to   { transform: scale(1.09) translate(-1%, -0.5%); }
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.dotActive {
+  background: var(--white);
+  transform: scale(1.35);
+}
+
+/* Caption side */
+.captionSide {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.caption {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--navy);
+  font-style: italic;
+  border-left: 4px solid var(--teal);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  min-height: 6rem;
+}
+
+.captionVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progress {
+  height: 3px;
+  background: var(--cream-dark);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--teal);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.counter {
+  font-size: 0.8rem;
+  color: var(--gray-mid);
+  letter-spacing: 0.08em;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 0.8rem 1.8rem;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}
