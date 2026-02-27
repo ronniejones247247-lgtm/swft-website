@@ -30,6 +30,7 @@
   object-fit: cover;
   object-position: center;
   animation: kenBurns 12s ease-in-out infinite alternate;
+  filter: blur(1.5px);
 }
 
 @keyframes kenBurns {
