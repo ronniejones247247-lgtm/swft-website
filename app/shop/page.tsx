@@ -10,7 +10,7 @@ const products = [
   {
     id: 'firm-sheet-5x40x72',
     name: 'Firm Upholstery Foam Sheet',
-    grade: '1804-5 Grade',
+    grade: '18045 Grade',
     specs: '5" × 40" × 72"',
     density: '1.80 lb/ft³',
     ild: '45 ILD — Firm',
@@ -107,7 +107,7 @@ export default function ShopPage() {
                   <span className={styles.shippingNote}>{p.shipping}</span>
                 </div>
                 <a
-                  href={`/#contact?product=${encodeURIComponent(p.name)}&size=${encodeURIComponent(p.specs)}&grade=${encodeURIComponent(p.grade)}`}
+                  href={`/#contact?product=${encodeURIComponent(p.name)}&size=${encodeURIComponent(p.specs)}&grade=18045`}
                   className={styles.orderBtn}
                 >
                   Order Now
