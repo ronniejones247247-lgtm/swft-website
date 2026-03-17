@@ -87,16 +87,16 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
       <defs>
         {/* Foam texture pattern — subtle cell grid */}
         <pattern id="foamTop"  width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#f5e8cc" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#e0d0aa" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#72c9b4" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#52b09a" strokeWidth="0.6" />
         </pattern>
         <pattern id="foamFront" width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#e8d4a4" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#d4c090" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#3d8b78" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#2d6b5c" strokeWidth="0.6" />
         </pattern>
         <pattern id="foamRight" width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#d4bb80" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#c0a86c" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#2a6358" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#1f4d45" strokeWidth="0.6" />
         </pattern>
       </defs>
 
@@ -110,7 +110,7 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
       <polygon
         points={pts([sA, sB, sF, sE])}
         fill="url(#foamFront)"
-        stroke="#8a6e30"
+        stroke="#1a3d35"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
@@ -119,7 +119,7 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
       <polygon
         points={pts([sB, sC, sG, sF])}
         fill="url(#foamRight)"
-        stroke="#8a6e30"
+        stroke="#1a3d35"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
@@ -128,7 +128,7 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
       <polygon
         points={pts([sE, sF, sG, sH])}
         fill="url(#foamTop)"
-        stroke="#8a6e30"
+        stroke="#1a3d35"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
