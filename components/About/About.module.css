@@ -71,6 +71,16 @@
   margin-bottom: 1rem;
 }
 
+.mission {
+  font-size: 0.97rem;
+  font-style: italic;
+  color: var(--navy);
+  border-left: 4px solid var(--teal);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
 /* Stats */
 .statsGrid {
   display: grid;

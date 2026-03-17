@@ -11,21 +11,7 @@ const services = [
       </svg>
     ),
     title: 'Cut-to-Size',
-    desc: 'Precision foam cuts to your exact length, width, and height specifications. Any foam grade, any quantity.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 40 L18 20 L28 32 L35 14 L40 22" />
-        <circle cx="8" cy="40" r="2.5" fill="currentColor" stroke="none" />
-        <circle cx="18" cy="20" r="2.5" fill="currentColor" stroke="none" />
-        <circle cx="28" cy="32" r="2.5" fill="currentColor" stroke="none" />
-        <circle cx="35" cy="14" r="2.5" fill="currentColor" stroke="none" />
-        <circle cx="40" cy="22" r="2.5" fill="currentColor" stroke="none" />
-      </svg>
-    ),
-    title: 'Pattern Cuts',
-    desc: 'Intricate shapes, custom profiles, and complex 2D contours cut with tight tolerances for any application.',
+    desc: 'Computerized vertical and horizontal cutting to your exact dimensions. Any foam grade, any quantity — from a single piece to full production runs.',
   },
   {
     icon: (
@@ -38,8 +24,8 @@ const services = [
         <line x1="24" y1="12" x2="24" y2="6" />
       </svg>
     ),
-    title: 'CNC Machining',
-    desc: 'Multi-dimensional CNC-routed foam parts with complex geometries — seat cushions, packaging inserts, industrial components.',
+    title: 'CNC 3D Machining',
+    desc: 'Multi-dimensional CNC router cutting with complex geometries — including round nose, bullet nose, tilt variance, compression, and relief cuts.',
   },
   {
     icon: (
@@ -52,8 +38,47 @@ const services = [
         <line x1="30" y1="28" x2="30" y2="40" strokeDasharray="3 3" />
       </svg>
     ),
-    title: 'Die Pressing',
-    desc: 'High-volume, consistent die-cut foam pieces for production runs — gaskets, pads, seals, and custom shapes.',
+    title: 'Die & Pressure Cutting',
+    desc: 'High-volume die and pressure cutting for consistent, repeatable parts — gaskets, pads, seals, and custom shapes at scale.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="6" y="10" width="36" height="10" rx="2" />
+        <rect x="6" y="24" width="36" height="10" rx="2" />
+        <line x1="14" y1="20" x2="14" y2="24" />
+        <line x1="24" y1="20" x2="24" y2="24" />
+        <line x1="34" y1="20" x2="34" y2="24" />
+      </svg>
+    ),
+    title: 'Lamination',
+    desc: 'Foam-to-foam, foam-to-wood, foam-to-plastic, and foam-to-upholstery laminations using Remay, Mylar, 3M adhesive, Ethylene plank, and fiber.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 40 L18 20 L28 32 L35 14 L40 22" />
+        <circle cx="8" cy="40" r="2.5" fill="currentColor" stroke="none" />
+        <circle cx="18" cy="20" r="2.5" fill="currentColor" stroke="none" />
+        <circle cx="28" cy="32" r="2.5" fill="currentColor" stroke="none" />
+        <circle cx="35" cy="14" r="2.5" fill="currentColor" stroke="none" />
+        <circle cx="40" cy="22" r="2.5" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+    title: 'Template & Pattern Cutting',
+    desc: 'Intricate custom profiles, convoluting, auto-buffing, and specialized edge cuts. Bring your template, pattern, or CAD file.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="8" y="14" width="32" height="22" rx="3" />
+        <path d="M14 14v-4M34 14v-4" />
+        <path d="M8 28h32" />
+        <path d="M16 36l-4 6M32 36l4 6" />
+      </svg>
+    ),
+    title: 'Packaging & JIT Delivery',
+    desc: 'Bar-coded carton or returnable packaging, direct-to-warehouse shipping, KanBan stocking, and just-in-time delivery throughout the US and Mexico.',
   },
 ];
 
@@ -65,7 +90,7 @@ export default function Services() {
           <p className="section-label">What We Do</p>
           <h2 className="section-title">Expert Foam Fabrication Services</h2>
           <p className="section-body">
-            From a single piece to high-volume production runs, our capabilities cover every stage of foam fabrication with the quality and precision your project demands.
+            From our 25,000 sq ft facility in Belton, TX, we offer a full range of foam fabrication capabilities — from computerized cutting and CNC machining to lamination, packaging, and just-in-time delivery throughout the US and Mexico.
           </p>
         </div>
 

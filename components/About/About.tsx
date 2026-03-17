@@ -2,10 +2,10 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const stats = [
-  { val: '30+', label: 'Years of Experience' },
-  { val: 'CNC', label: 'Precision Machining' },
-  { val: '100%', label: 'Custom Engineering' },
-  { val: 'Fast', label: 'Turnaround Times' },
+  { val: '30+', label: 'Years in Business' },
+  { val: '25,000', label: 'Sq Ft Facility' },
+  { val: '23', label: 'Full-Time Employees' },
+  { val: 'ISO', label: '9001:2000 Certified' },
 ];
 
 export default function About() {
@@ -33,15 +33,22 @@ export default function About() {
           <p className="section-label">About SWFT</p>
           <h2 className="section-title">Your Trusted Foam Fabrication Partner</h2>
           <p className={styles.body}>
-            At SouthWestern Foam Technologies, we combine decades of hands-on experience
-            with precision engineering to deliver foam solutions that fit perfectly — every time.
-            Whether you need a single custom piece or a large production run, our on-site team
-            is dedicated to getting it right.
+            As a family-owned business, SouthWestern Foam Technologies has maintained its founding
+            philosophy for over 30 years — exceptional quality, consistent deliverability, and
+            outstanding customer service. We have been recognized as a leader in design and quality
+            manufacturing in a rapidly advancing industry.
           </p>
           <p className={styles.body}>
-            We work with a wide range of foam types including conventional, memory, high-resilience,
-            and specialty foams, ensuring the right material for every application.
+            From our 25,000 sq ft fabrication facility in Belton, TX, our team of 23 full-time
+            employees delivers just-in-time foam solutions throughout the United States and Mexico.
+            Our ISO 9001:2000 certified processes ensure full traceability and accountability on
+            every order.
           </p>
+          <blockquote className={styles.mission}>
+            &ldquo;Our mission is to supply our customers with on-time delivery of exact quantities
+            of the highest quality parts available in the industry, and to continually improve to
+            exceed our customers&rsquo; requirements.&rdquo;
+          </blockquote>
 
           {/* Stats grid */}
           <div className={styles.statsGrid}>
