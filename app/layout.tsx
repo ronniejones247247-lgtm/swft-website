@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Nav from "@/components/Nav/Nav";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "SouthWestern Foam Technologies | Custom Foam Solutions",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

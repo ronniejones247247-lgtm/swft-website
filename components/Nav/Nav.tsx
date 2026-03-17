@@ -1,16 +1,18 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './Nav.module.css';
 
 const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'Our Expertise', href: '#expertise' },
-  { label: 'Services', href: '#services' },
-  { label: 'Visualizer', href: '#visualizer' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home',       href: '/' },
+  { label: 'Services',   href: '/services' },
+  { label: 'Markets',    href: '/markets' },
+  { label: 'Cushions',   href: '/#cushions' },
+  { label: 'Visualizer', href: '/#visualizer' },
+  { label: 'About',      href: '/about' },
+  { label: 'Contact',    href: '/#contact' },
 ];
 
 export default function Nav() {
@@ -25,13 +27,13 @@ export default function Nav() {
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <a href="#home" className={styles.brand}>
+      <Link href="/" className={styles.brand}>
         <Image src="/logo.jpg" alt="SWFT Logo" width={48} height={48} className={styles.logo} />
         <span className={styles.brandName}>
           <span className={styles.brandMain}>SWFT</span>
           <span className={styles.brandSub}>SouthWestern Foam Technologies</span>
         </span>
-      </a>
+      </Link>
 
       <button
         className={styles.burger}
@@ -46,15 +48,15 @@ export default function Nav() {
       <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
         {links.map(l => (
           <li key={l.href}>
-            <a href={l.href} className={styles.link} onClick={() => setMenuOpen(false)}>
+            <Link href={l.href} className={styles.link} onClick={() => setMenuOpen(false)}>
               {l.label}
-            </a>
+            </Link>
           </li>
         ))}
         <li>
-          <a href="#contact" className={styles.ctaBtn} onClick={() => setMenuOpen(false)}>
+          <Link href="/#contact" className={styles.ctaBtn} onClick={() => setMenuOpen(false)}>
             Get a Quote
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
