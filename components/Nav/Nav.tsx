@@ -9,7 +9,6 @@ const links = [
   { label: 'Home',       href: '/' },
   { label: 'Services',   href: '/services' },
   { label: 'Markets',    href: '/markets' },
-  { label: 'Shop',       href: '/shop' },
   { label: 'Cushions',   href: '/#cushions' },
   { label: 'Visualizer', href: '/#visualizer' },
   { label: 'About',      href: '/about' },
