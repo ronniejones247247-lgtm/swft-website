@@ -5,7 +5,7 @@ import { useState } from 'react';
 import styles from './Footer.module.css';
 
 // ── Replace YOUR_FORM_ID after signing up at formspree.io ──────────────────────
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdzzvng';
 
 const FOAM_GRADES = [
   { value: '',                    label: 'Select a grade…' },
