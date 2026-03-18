@@ -11,7 +11,7 @@ const slides = [
   },
   {
     src: '/slideshow/slide1.jpg',
-    caption: 'Whether you require precise cut-to-size pieces, intricate pattern cuts, or complex multi-dimensional CNC machining, we deliver with precision and reliability.',
+    caption: 'Whether you require precise cut-to-size pieces, intricate pattern cuts, or complex multi-dimensional CNC machinery, we deliver with precision and reliability.',
   },
   {
     src: '/slideshow/slide4.jpg',

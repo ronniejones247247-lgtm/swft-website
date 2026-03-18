@@ -4,13 +4,12 @@ import styles from './about.module.css';
 
 export const metadata: Metadata = {
   title: 'About Us | SouthWestern Foam Technologies',
-  description: 'Family-owned for 30 years, SWFT operates a 25,000 sq ft fabrication facility in Belton, TX with 23 full-time employees and ISO 9001:2000 certification.',
+  description: 'Family-owned for 30 years, SWFT operates a 25,000 sq ft fabrication facility in Belton, TX with ISO 9001:2000 certification.',
 };
 
 const stats = [
   { val: '30+', label: 'Years in Business' },
   { val: '25,000', label: 'Sq Ft Facility' },
-  { val: '23', label: 'Full-Time Employees' },
   { val: 'ISO', label: '9001:2000 Certified' },
 ];
 
@@ -19,7 +18,7 @@ const values = [
   { title: 'Consistent Deliverability', desc: 'On-time delivery of exact quantities — from single pieces to high-volume production runs.' },
   { title: 'Customer Service', desc: 'Our team works closely with you from design through delivery, adapting to your schedule and requirements.' },
   { title: 'Innovation', desc: 'Continuous investment in equipment and processes to stay at the forefront of foam fabrication technology.' },
-  { title: 'Employee Excellence', desc: 'We provide our 23 full-time employees with a quality workplace and environment — the foundation of our quality output.' },
+  { title: 'Employee Excellence', desc: 'We provide our employees with a quality workplace and environment — the foundation of our quality output.' },
   { title: 'Family Owned', desc: 'As a family-owned business, we operate with long-term values — building lasting relationships with every customer.' },
 ];
 
@@ -124,16 +123,8 @@ export default function AboutPage() {
               <div className={styles.facilityVal}>25,000</div>
               <div className={styles.facilityLbl}>Square Feet</div>
               <p className={styles.facilityDesc}>
-                A fully equipped fabrication facility housing computerized cutting, CNC machining,
+                A fully equipped fabrication facility housing computerized cutting, CNC machinery,
                 lamination, and packaging operations under one roof.
-              </p>
-            </div>
-            <div className={styles.facilityCard}>
-              <div className={styles.facilityVal}>23</div>
-              <div className={styles.facilityLbl}>Full-Time Employees</div>
-              <p className={styles.facilityDesc}>
-                Experienced on-site engineers and fabricators dedicated to precision, quality,
-                and delivering your order on time.
               </p>
             </div>
             <div className={styles.facilityCard}>

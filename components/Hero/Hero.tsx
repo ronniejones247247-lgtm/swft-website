@@ -59,7 +59,7 @@ export default function Hero() {
         <h1 className={styles.headline}>Creating The Perfect Fit</h1>
         <p className={styles.sub}>
           Custom foam solutions engineered precisely to your specifications.
-          Cut-to-size, CNC machining, die pressing &amp; more.
+          Cut-to-size, CNC machinery, die pressing &amp; more.
         </p>
         <div className={styles.actions}>
           <a href="#visualizer" className={styles.btnPrimary}>Visualize Your Foam</a>

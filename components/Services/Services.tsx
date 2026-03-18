@@ -90,7 +90,7 @@ export default function Services() {
           <p className="section-label">What We Do</p>
           <h2 className="section-title">Expert Foam Fabrication Services</h2>
           <p className="section-body">
-            From our 25,000 sq ft facility in Belton, TX, we offer a full range of foam fabrication capabilities — from computerized cutting and CNC machining to lamination, packaging, and just-in-time delivery throughout the US and Mexico.
+            From our 25,000 sq ft facility in Belton, TX, we offer a full range of foam fabrication capabilities — from computerized cutting and CNC machinery to lamination, packaging, and just-in-time delivery throughout the US and Mexico.
           </p>
         </div>
 
