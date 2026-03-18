@@ -45,7 +45,7 @@ export default function About() {
           <blockquote className={styles.mission}>
             &ldquo;Our mission is to supply our customers with on-time delivery of exact quantities
             of the highest quality parts available in the industry, and to continually improve to
-            exceed our customers&rsquo; requirements.&rdquo;
+            exceed our customers&rsquo; expectations.&rdquo;
           </blockquote>
 
           {/* Stats grid */}
