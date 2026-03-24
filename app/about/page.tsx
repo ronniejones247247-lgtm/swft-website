@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 const stats = [
   { val: '30+', label: 'Years in Business' },
   { val: '25,000', label: 'Sq Ft Facility' },
-  { val: 'ISO', label: '9001:2000 Certified' },
+  { val: 'ISO', label: '9001:2000 Compliant' },
 ];
 
 const values = [
-  { title: 'Exceptional Quality', desc: 'Every part is manufactured to exact specifications with full traceability and ISO 9001:2000 certified processes.' },
+  { title: 'Exceptional Quality', desc: 'Every part is manufactured to exact specifications with full traceability and ISO 9001:2000 compliant processes.' },
   { title: 'Consistent Deliverability', desc: 'On-time delivery of exact quantities — from single pieces to high-volume production runs.' },
   { title: 'Customer Service', desc: 'Our team works closely with you from design through delivery, adapting to your schedule and requirements.' },
   { title: 'Innovation', desc: 'Continuous investment in equipment and processes to stay at the forefront of foam fabrication technology.' },

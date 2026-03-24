@@ -165,7 +165,7 @@ export default function ServicesPage() {
           <div className={styles.blockHeader}>
             <h2 className={styles.blockTitle}>Design & Testing</h2>
             <p className={styles.blockSub}>
-              ISO 9001:2000 certified processes with full physical property testing using Instron
+              ISO 9001:2000 compliant processes with full physical property testing using Instron
               equipment — ensuring every part meets spec before it ships.
             </p>
           </div>

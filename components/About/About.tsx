@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const stats = [
   { val: '30+', label: 'Years in Business' },
   { val: '25,000', label: 'Sq Ft Facility' },
-  { val: 'ISO', label: '9001:2000 Certified' },
+  { val: 'ISO', label: '9001:2000 Compliant' },
 ];
 
 export default function About() {
@@ -39,7 +39,7 @@ export default function About() {
           </p>
           <p className={styles.body}>
             From our 25,000 sq ft fabrication facility in Belton, TX, we deliver just-in-time foam solutions throughout the United States and Mexico.
-            Our ISO 9001:2000 certified processes ensure full traceability and accountability on
+            Our ISO 9001:2000 compliant processes ensure full traceability and accountability on
             every order.
           </p>
           <blockquote className={styles.mission}>
