@@ -72,7 +72,7 @@ export default function ServicesPage() {
           <p className={styles.label}>What We Do</p>
           <h1 className={styles.heroTitle}>Services & Capabilities</h1>
           <p className={styles.heroSub}>
-            From our 25,000 sq ft fabrication facility in Belton, TX, we offer a full range of foam
+            From our 8 acre fabrication facility in Belton, TX, we offer a full range of foam
             cutting, lamination, and delivery services — backed by 30 years of precision manufacturing.
           </p>
         </div>

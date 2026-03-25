@@ -3,7 +3,7 @@ import styles from './About.module.css';
 
 const stats = [
   { val: '30+', label: 'Years in Business' },
-  { val: '25,000', label: 'Sq Ft Facility' },
+  { val: '8 Acre', label: 'Fabrication Facility' },
   { val: 'ISO', label: '9001:2000 Compliant' },
 ];
 
@@ -38,7 +38,7 @@ export default function About() {
             manufacturing in a rapidly advancing industry.
           </p>
           <p className={styles.body}>
-            From our 25,000 sq ft fabrication facility in Belton, TX, we deliver just-in-time foam solutions throughout the United States and Mexico.
+            From our 8 acre fabrication facility in Belton, TX, we deliver just-in-time foam solutions throughout the United States and Mexico.
             Our ISO 9001:2000 compliant processes ensure full traceability and accountability on
             every order.
           </p>

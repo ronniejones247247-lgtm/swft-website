@@ -4,12 +4,12 @@ import styles from './about.module.css';
 
 export const metadata: Metadata = {
   title: 'About Us | SouthWestern Foam Technologies',
-  description: 'Family-owned for 30 years, SWFT operates a 25,000 sq ft fabrication facility in Belton, TX with ISO 9001:2000 certification.',
+  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with ISO 9001:2000 certification.',
 };
 
 const stats = [
   { val: '30+', label: 'Years in Business' },
-  { val: '25,000', label: 'Sq Ft Facility' },
+  { val: '8 Acre', label: 'Fabrication Facility' },
   { val: 'ISO', label: '9001:2000 Compliant' },
 ];
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
             </p>
             <p className={styles.body}>
               As a recognized leader in design and quality manufacturing, we operate from our
-              25,000 sq ft fabrication facility in Belton, Texas — servicing customers throughout
+              8 acre fabrication facility in Belton, Texas — servicing customers throughout
               the United States and Mexico with just-in-time delivery programs tailored to your needs.
             </p>
             <blockquote className={styles.mission}>
@@ -120,8 +120,8 @@ export default function AboutPage() {
           <h2 className={styles.sectionTitle}>Belton, TX — Fabrication</h2>
           <div className={styles.facilityCards}>
             <div className={styles.facilityCard}>
-              <div className={styles.facilityVal}>25,000</div>
-              <div className={styles.facilityLbl}>Square Feet</div>
+              <div className={styles.facilityVal}>8 Acre</div>
+              <div className={styles.facilityLbl}>Fabrication Facility</div>
               <p className={styles.facilityDesc}>
                 A fully equipped fabrication facility housing computerized cutting, CNC machinery,
                 lamination, and packaging operations under one roof.
