@@ -87,16 +87,16 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
       <defs>
         {/* Foam texture pattern — subtle cell grid */}
         <pattern id="foamTop"  width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#72c9b4" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#52b09a" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#00C4B4" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#00A89A" strokeWidth="0.6" />
         </pattern>
         <pattern id="foamFront" width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#3d8b78" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#2d6b5c" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#009B8D" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#007A6E" strokeWidth="0.6" />
         </pattern>
         <pattern id="foamRight" width="14" height="14" patternUnits="userSpaceOnUse">
-          <rect width="14" height="14" fill="#2a6358" />
-          <circle cx="7" cy="7" r="3" fill="none" stroke="#1f4d45" strokeWidth="0.6" />
+          <rect width="14" height="14" fill="#007A6E" />
+          <circle cx="7" cy="7" r="3" fill="none" stroke="#006058" strokeWidth="0.6" />
         </pattern>
       </defs>
 
@@ -141,11 +141,11 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
 
       {/* Length label on front-bottom edge */}
       <line x1={sA[0]} y1={sA[1]} x2={sB[0]} y2={sB[1]} stroke="rgba(255,255,255,0.35)" strokeWidth="1" strokeDasharray="4 3" />
-      <circle cx={sA[0]} cy={sA[1]} r="4" fill="#3d8b78" stroke="#ffffff" strokeWidth="1.5" />
-      <circle cx={sB[0]} cy={sB[1]} r="4" fill="#3d8b78" stroke="#ffffff" strokeWidth="1.5" />
+      <circle cx={sA[0]} cy={sA[1]} r="4" fill="#009B8D" stroke="#ffffff" strokeWidth="1.5" />
+      <circle cx={sB[0]} cy={sB[1]} r="4" fill="#009B8D" stroke="#ffffff" strokeWidth="1.5" />
       {/* L badge */}
       <rect x={lblL[0] - 38} y={lblL[1] + 6} width={76} height={22} rx={6}
-        fill="#ffffff" stroke="#3d8b78" strokeWidth="1.5" />
+        fill="#ffffff" stroke="#009B8D" strokeWidth="1.5" />
       <text x={lblL[0]} y={lblL[1] + 21} textAnchor="middle"
         fill="#1a2b6b" fontSize="13" fontWeight="800"
         fontFamily="'Segoe UI', system-ui, sans-serif">
@@ -154,10 +154,10 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
 
       {/* Width label on right-bottom edge */}
       <line x1={sB[0]} y1={sB[1]} x2={sC[0]} y2={sC[1]} stroke="rgba(255,255,255,0.35)" strokeWidth="1" strokeDasharray="4 3" />
-      <circle cx={sC[0]} cy={sC[1]} r="4" fill="#3d8b78" stroke="#ffffff" strokeWidth="1.5" />
+      <circle cx={sC[0]} cy={sC[1]} r="4" fill="#009B8D" stroke="#ffffff" strokeWidth="1.5" />
       {/* W badge */}
       <rect x={lblW[0] + 10} y={lblW[1] - 5} width={76} height={22} rx={6}
-        fill="#ffffff" stroke="#3d8b78" strokeWidth="1.5" />
+        fill="#ffffff" stroke="#009B8D" strokeWidth="1.5" />
       <text x={lblW[0] + 48} y={lblW[1] + 10} textAnchor="middle"
         fill="#1a2b6b" fontSize="13" fontWeight="800"
         fontFamily="'Segoe UI', system-ui, sans-serif">
@@ -166,10 +166,10 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
 
       {/* Height/Thickness label on right-vertical edge */}
       <line x1={sB[0]} y1={sB[1]} x2={sF[0]} y2={sF[1]} stroke="rgba(255,255,255,0.35)" strokeWidth="1" strokeDasharray="4 3" />
-      <circle cx={sF[0]} cy={sF[1]} r="4" fill="#3d8b78" stroke="#ffffff" strokeWidth="1.5" />
+      <circle cx={sF[0]} cy={sF[1]} r="4" fill="#009B8D" stroke="#ffffff" strokeWidth="1.5" />
       {/* T badge */}
       <rect x={lblH[0] + 8} y={lblH[1] - 11} width={72} height={22} rx={6}
-        fill="#ffffff" stroke="#3d8b78" strokeWidth="1.5" />
+        fill="#ffffff" stroke="#009B8D" strokeWidth="1.5" />
       <text x={lblH[0] + 44} y={lblH[1] + 4} textAnchor="middle"
         dominantBaseline="middle"
         fill="#1a2b6b" fontSize="13" fontWeight="800"
