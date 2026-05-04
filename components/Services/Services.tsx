@@ -24,7 +24,7 @@ const services = [
         <line x1="24" y1="12" x2="24" y2="6" />
       </svg>
     ),
-    title: 'CNC 3D Machining',
+    title: 'CNC 3D Machinery',
     desc: 'Multi-dimensional CNC router cutting with complex geometries — including round nose, bullet nose, tilt variance, compression, and relief cuts.',
   },
   {

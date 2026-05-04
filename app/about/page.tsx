@@ -4,7 +4,7 @@ import styles from './about.module.css';
 
 export const metadata: Metadata = {
   title: 'About Us | SouthWestern Foam Technologies',
-  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with ISO 9001:2000 certification.',
+  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with ISO 9001:2000 compliance.',
 };
 
 const stats = [
