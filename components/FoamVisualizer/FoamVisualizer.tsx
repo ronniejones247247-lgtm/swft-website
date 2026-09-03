@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from 'react';
 import styles from './FoamVisualizer.module.css';
+import { FOAM_GRADES } from '@/lib/foamGrades';
+import { useQuote } from '@/components/QuoteContext';
 
 type Unit = 'in' | 'cm';
 
@@ -180,17 +182,9 @@ function FoamBox({ L, W, H, animKey }: FoamBoxProps) {
   );
 }
 
-const FOAM_GRADES = [
-  { value: '',               label: 'Select a grade…' },
-  { value: 'Standard Foam',      label: 'Standard Foam' },
-  { value: 'High Density Foam',  label: 'High Density Foam' },
-  { value: 'High Resilience Foam', label: 'High Resilience Foam' },
-  { value: 'Memory Foam',        label: 'Memory Foam' },
-  { value: 'Other / Not Sure',   label: 'Other / Not Sure' },
-];
-
 // ─── Main Component ────────────────────────────────────────────────────────────
 export default function FoamVisualizer() {
+  const { setPrefill } = useQuote();
   const [length, setLength] = useState('24');
   const [width,  setWidth]  = useState('24');
   const [height, setHeight] = useState('4');
@@ -321,7 +315,22 @@ export default function FoamVisualizer() {
             </div>
           )}
 
-          <a href="#contact" className={styles.quoteBtn}>Request a Quote</a>
+          <a
+            href="#contact"
+            className={styles.quoteBtn}
+            onClick={() => {
+              if (valid) {
+                setPrefill({
+                  lengthIn: String(L),
+                  widthIn: String(W),
+                  thicknessIn: String(H),
+                  grade,
+                });
+              }
+            }}
+          >
+            Request a Quote
+          </a>
         </div>
 
         {/* 3D Visualizer */}

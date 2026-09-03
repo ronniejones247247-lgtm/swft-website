@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
+import { QuoteProvider } from "@/components/QuoteContext";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -79,9 +80,11 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-RNWMHJY60N');
         `}</Script>
-        <Nav />
-        {children}
-        <Footer />
+        <QuoteProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </QuoteProvider>
       </body>
     </html>
   );

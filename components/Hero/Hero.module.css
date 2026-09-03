@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  height: 100svh; /* small-viewport height: stable under mobile browser chrome */
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -188,4 +189,39 @@
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-18px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .content {
+    padding: 0 1.25rem;
+  }
+
+  .logo {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 1.1rem;
+  }
+
+  .sub {
+    margin-bottom: 1.6rem;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    text-align: center;
+  }
+
+  .scrollHint {
+    display: none;
+  }
 }

@@ -1,24 +1,32 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Footer.module.css';
+import { FOAM_GRADES } from '@/lib/foamGrades';
+import { useQuote } from '@/components/QuoteContext';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdzzvng';
 
-const FOAM_GRADES = [
-  { value: '',                    label: 'Select a grade…' },
-  { value: 'Standard Foam',       label: 'Standard Foam' },
-  { value: 'High Density Foam',   label: 'High Density Foam' },
-  { value: 'High Resilience Foam',label: 'High Resilience Foam' },
-  { value: 'Memory Foam',         label: 'Memory Foam' },
-  { value: 'Other / Not Sure',    label: 'Other / Not Sure' },
-];
-
 export default function Footer() {
+  const { prefill } = useQuote();
   const [submitting, setSubmitting] = useState(false);
   const [submitted,  setSubmitted]  = useState(false);
   const [error,      setError]      = useState('');
+  const [foamGrade,  setFoamGrade]  = useState('');
+  const [lengthIn,   setLengthIn]   = useState('');
+  const [widthIn,    setWidthIn]    = useState('');
+  const [thicknessIn, setThicknessIn] = useState('');
+
+  // When the visualizer's "Request a Quote" is clicked, carry its values into the form
+  useEffect(() => {
+    if (!prefill) return;
+    setLengthIn(prefill.lengthIn);
+    setWidthIn(prefill.widthIn);
+    setThicknessIn(prefill.thicknessIn);
+    if (prefill.grade) setFoamGrade(prefill.grade);
+    setSubmitted(false);
+  }, [prefill]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -109,7 +117,11 @@ export default function Footer() {
                 </button>
               </div>
             ) : (
-              <form className={styles.form} onSubmit={handleSubmit} noValidate>
+              <form className={styles.form} onSubmit={handleSubmit}>
+
+                {/* Formspree config + spam honeypot */}
+                <input type="hidden" name="_subject" value="New quote request — swfoamtech.com" />
+                <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
                 {/* Row 1 — Name + Email */}
                 <div className={styles.formRow}>
@@ -138,7 +150,12 @@ export default function Footer() {
                 {/* Foam Grade */}
                 <label className={styles.formLabel}>
                   Foam Grade
-                  <select name="foam_grade" className={styles.formSelect}>
+                  <select
+                    name="foam_grade"
+                    className={styles.formSelect}
+                    value={foamGrade}
+                    onChange={e => setFoamGrade(e.target.value)}
+                  >
                     {FOAM_GRADES.map(g => (
                       <option key={g.value} value={g.value}>{g.label}</option>
                     ))}
@@ -149,17 +166,20 @@ export default function Footer() {
                 <div className={styles.dimRow}>
                   <label className={styles.formLabel}>
                     Length (in)
-                    <input name="length_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24" />
+                    <input name="length_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24"
+                      value={lengthIn} onChange={e => setLengthIn(e.target.value)} />
                   </label>
                   <span className={styles.dimX}>×</span>
                   <label className={styles.formLabel}>
                     Width (in)
-                    <input name="width_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24" />
+                    <input name="width_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24"
+                      value={widthIn} onChange={e => setWidthIn(e.target.value)} />
                   </label>
                   <span className={styles.dimX}>×</span>
                   <label className={styles.formLabel}>
                     Thickness (in)
-                    <input name="thickness_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="4" />
+                    <input name="thickness_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="4"
+                      value={thicknessIn} onChange={e => setThicknessIn(e.target.value)} />
                   </label>
                 </div>
 
