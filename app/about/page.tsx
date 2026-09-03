@@ -41,6 +41,14 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className={styles.hero}>
+        <Image
+          src="/photos/foam-texture.jpg"
+          alt="Close-up of open-cell polyurethane foam texture"
+          fill
+          priority
+          className={styles.heroPhoto}
+        />
+        <div className={styles.heroOverlay} />
         <div className={styles.heroInner}>
           <p className={styles.label}>Our Story</p>
           <h1 className={styles.heroTitle}>About SouthWestern Foam Technologies</h1>

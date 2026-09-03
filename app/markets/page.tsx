@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import styles from './markets.module.css';
 
 export const metadata: Metadata = {
@@ -134,6 +135,14 @@ export default function MarketsPage() {
 
       {/* Hero */}
       <section className={styles.hero}>
+        <Image
+          src="/photos/molded-seat-cushions.jpg"
+          alt="Finished molded foam seat cushions staged for delivery at SWFT"
+          fill
+          priority
+          className={styles.heroPhoto}
+        />
+        <div className={styles.heroOverlay} />
         <div className={styles.heroInner}>
           <p className={styles.label}>Industries We Serve</p>
           <h1 className={styles.heroTitle}>Markets</h1>
