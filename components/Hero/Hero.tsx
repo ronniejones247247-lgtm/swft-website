@@ -5,12 +5,9 @@ import { useEffect, useState } from 'react';
 import styles from './Hero.module.css';
 
 const slides = [
-  '/slideshow/slide1.jpg',
-  '/slideshow/slide2.jpg',
-  '/slideshow/slide3.jpg',
-  '/slideshow/slide4.jpg',
-  '/slideshow/slide5.jpg',
-  '/slideshow/slide6.jpg',
+  { src: '/photos/swft-delivery-trucks.jpg', alt: 'SouthWestern Foam Technologies delivery trucks with Creating The Perfect Fit branding' },
+  { src: '/photos/custom-cut-foam-parts.jpg', alt: 'Precision-cut custom foam parts stacked on carts in the SWFT fabrication facility' },
+  { src: '/photos/foam-texture.jpg', alt: 'Close-up of open-cell polyurethane foam texture' },
 ];
 
 export default function Hero() {
@@ -27,14 +24,14 @@ export default function Hero() {
     <section id="home" className={styles.hero}>
       {/* Background slideshow */}
       <div className={styles.bgSlideshow}>
-        {slides.map((src, i) => (
+        {slides.map((s, i) => (
           <div
-            key={src}
+            key={s.src}
             className={`${styles.slide} ${i === current ? styles.slideActive : ''}`}
           >
             <Image
-              src={src}
-              alt=""
+              src={s.src}
+              alt={s.alt}
               fill
               priority={i === 0}
               className={styles.slideImg}

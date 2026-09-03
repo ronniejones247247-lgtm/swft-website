@@ -6,19 +6,23 @@ import styles from './Slideshow.module.css';
 
 const slides = [
   {
-    src: '/slideshow/slide2.jpg',
+    src: '/photos/custom-cut-foam-parts.jpg',
+    alt: 'Stacks of precision-cut foam parts on carts in the SWFT warehouse',
     caption: 'At Southwestern Foam Technologies, we specialize in providing high-quality foam solutions tailored to your exact needs.',
   },
   {
-    src: '/slideshow/slide1.jpg',
+    src: '/photos/molded-seat-cushions.jpg',
+    alt: 'Molded foam seat cushions staged on a fabrication cart',
     caption: 'Whether you require precise cut-to-size pieces, intricate pattern cuts, or complex multi-dimensional CNC machinery, we deliver with precision and reliability.',
   },
   {
-    src: '/slideshow/slide4.jpg',
+    src: '/photos/cushion-fabrication.jpg',
+    alt: 'SWFT team member hand-assembling a custom foam cushion',
     caption: 'Our team of experienced on-site engineers works closely with you to design and manufacture the perfect fit for your application…',
   },
   {
-    src: '/slideshow/slide6.jpg',
+    src: '/photos/convoluted-foam.jpg',
+    alt: 'Close-up of convoluted egg-crate foam showing precision peaks',
     caption: '…ensuring optimal performance and satisfaction. Trust us for all your foam needs—quality, customization, and expertise that you can count on.',
   },
 ];
@@ -49,7 +53,7 @@ export default function Slideshow() {
                 key={s.src}
                 className={`${styles.slide} ${i === current ? styles.slideActive : ''}`}
               >
-                <Image src={s.src} alt="" fill className={styles.img} />
+                <Image src={s.src} alt={s.alt} fill className={styles.img} />
               </div>
             ))}
             {/* Dot indicators */}

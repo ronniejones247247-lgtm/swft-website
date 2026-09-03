@@ -3,7 +3,8 @@ import styles from './markets.module.css';
 
 export const metadata: Metadata = {
   title: 'Markets Served | SouthWestern Foam Technologies',
-  description: 'SWFT serves a wide range of industries including marine, medical, automotive, oilfield, transportation, packaging, and more.',
+  description: 'Texas foam fabricator serving marine, medical, automotive, oilfield, transportation, packaging, and seating industries across the US and Mexico.',
+  alternates: { canonical: '/markets' },
 };
 
 const markets = [

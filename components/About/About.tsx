@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const stats = [
   { val: '30+', label: 'Years in Business' },
   { val: '8 Acre', label: 'Fabrication Facility' },
-  { val: 'ISO', label: '9001:2000 Compliant' },
+  { val: 'ISO', label: '9001:2015 Aligned Processes' },
 ];
 
 export default function About() {
@@ -15,8 +15,8 @@ export default function About() {
         <div className={styles.imageSide}>
           <div className={styles.imgFrame}>
             <Image
-              src="/slideshow/slide2.jpg"
-              alt="Foam fabrication"
+              src="/photos/foam-igloo-team.jpg"
+              alt="SWFT team member celebrating inside a custom-fabricated foam igloo on the shop floor"
               fill
               className={styles.img}
             />
@@ -39,8 +39,8 @@ export default function About() {
           </p>
           <p className={styles.body}>
             From our 8 acre fabrication facility in Belton, TX, we deliver just-in-time foam solutions throughout the United States and Mexico.
-            Our ISO 9001:2000 compliant processes ensure full traceability and accountability on
-            every order.
+            Our quality management system, modeled on ISO 9001:2015, ensures full traceability
+            and accountability on every order.
           </p>
           <blockquote className={styles.mission}>
             &ldquo;Our mission is to supply our customers with on-time delivery of exact quantities

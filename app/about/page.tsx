@@ -4,17 +4,18 @@ import styles from './about.module.css';
 
 export const metadata: Metadata = {
   title: 'About Us | SouthWestern Foam Technologies',
-  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with ISO 9001:2000 compliance.',
+  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with a quality system modeled on ISO 9001:2015.',
+  alternates: { canonical: '/about' },
 };
 
 const stats = [
   { val: '30+', label: 'Years in Business' },
   { val: '8 Acre', label: 'Fabrication Facility' },
-  { val: 'ISO', label: '9001:2000 Compliant' },
+  { val: 'ISO', label: '9001:2015 Aligned Processes' },
 ];
 
 const values = [
-  { title: 'Exceptional Quality', desc: 'Every part is manufactured to exact specifications with full traceability and ISO 9001:2000 compliant processes.' },
+  { title: 'Exceptional Quality', desc: 'Every part is manufactured to exact specifications with full traceability and quality processes modeled on ISO 9001:2015.' },
   { title: 'Consistent Deliverability', desc: 'On-time delivery of exact quantities — from single pieces to high-volume production runs.' },
   { title: 'Customer Service', desc: 'Our team works closely with you from design through delivery, adapting to your schedule and requirements.' },
   { title: 'Innovation', desc: 'Continuous investment in equipment and processes to stay at the forefront of foam fabrication technology.' },
@@ -63,8 +64,9 @@ export default function AboutPage() {
             </p>
             <p className={styles.body}>
               As a recognized leader in design and quality manufacturing, we operate from our
-              8 acre fabrication facility in Belton, Texas — servicing customers throughout
-              the United States and Mexico with just-in-time delivery programs tailored to your needs.
+              8 acre fabrication facility in Belton, Texas — in the heart of the
+              Dallas–Austin–San Antonio corridor — servicing customers throughout the United
+              States and Mexico with just-in-time delivery programs tailored to your needs.
             </p>
             <blockquote className={styles.mission}>
               &ldquo;Our mission is to supply our customers with on-time delivery of exact quantities
@@ -75,8 +77,8 @@ export default function AboutPage() {
           <div className={styles.whoImage}>
             <div className={styles.imgFrame}>
               <Image
-                src="/slideshow/slide2.jpg"
-                alt="SWFT facility"
+                src="/photos/swft-delivery-trucks.jpg"
+                alt="SouthWestern Foam Technologies branded delivery trucks headed out from Belton, TX"
                 fill
                 className={styles.img}
               />

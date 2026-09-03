@@ -3,7 +3,8 @@ import styles from './services.module.css';
 
 export const metadata: Metadata = {
   title: 'Services & Capabilities | SouthWestern Foam Technologies',
-  description: 'Full-service foam fabrication: CNC cutting, lamination, die pressing, convoluting, and just-in-time delivery throughout the US and Mexico.',
+  description: 'Full-service foam fabrication in Belton, TX: CNC cutting, lamination, die pressing, convoluting, and just-in-time delivery throughout the US and Mexico.',
+  alternates: { canonical: '/services' },
 };
 
 const cuttingCapabilities = [
@@ -54,7 +55,7 @@ const designCapabilities = [
   'Full prototyping and pattern development',
   'Tooling and fixture development',
   'CAD comfort engineering',
-  'ISO 9001:2000 — full traceability and accountability',
+  'Quality system modeled on ISO 9001:2015 — full traceability and accountability',
   'Instron physical property testing',
   'Density, IFD/ILD, Durometer testing',
   'Tensile, tear, elongation, and air flow testing',
@@ -165,8 +166,8 @@ export default function ServicesPage() {
           <div className={styles.blockHeader}>
             <h2 className={styles.blockTitle}>Design & Testing</h2>
             <p className={styles.blockSub}>
-              ISO 9001:2000 compliant processes with full physical property testing using Instron
-              equipment — ensuring every part meets spec before it ships.
+              Quality processes modeled on ISO 9001:2015, with full physical property testing using
+              Instron equipment — ensuring every part meets spec before it ships.
             </p>
           </div>
           <ul className={styles.capList}>
