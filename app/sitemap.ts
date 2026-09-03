@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://swfoamtech.com';
+  const base = 'https://www.swfoamtech.com';
   return [
     { url: `${base}/`, changeFrequency: 'monthly', priority: 1 },
     { url: `${base}/services`, changeFrequency: 'monthly', priority: 0.9 },

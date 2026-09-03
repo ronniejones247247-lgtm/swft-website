@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://swfoamtech.com"),
+  metadataBase: new URL("https://www.swfoamtech.com"),
   title: "SouthWestern Foam Technologies | Custom Foam Solutions",
   description: "Custom foam fabrication in Belton, TX — cut-to-size, CNC machining, die pressing, lamination, and JIT delivery across the US and Mexico. Family-owned for 30+ years.",
   alternates: { canonical: "/" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "SouthWestern Foam Technologies",
     title: "SouthWestern Foam Technologies | Custom Foam Solutions",
     description: "Custom foam fabrication in Belton, TX — cut-to-size, CNC machining, die pressing, lamination, and JIT delivery across the US and Mexico.",
-    url: "https://swfoamtech.com",
+    url: "https://www.swfoamtech.com",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "SouthWestern Foam Technologies delivery trucks" }],
   },
   twitter: {
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://swfoamtech.com/#business",
+  "@id": "https://www.swfoamtech.com/#business",
   name: "SouthWestern Foam Technologies",
   description:
     "Family-owned custom foam fabricator in Belton, TX. Cut-to-size, CNC 3D cutting, die pressing, lamination, and just-in-time delivery throughout the United States and Mexico.",
-  url: "https://swfoamtech.com",
+  url: "https://www.swfoamtech.com",
   telephone: "+1-254-939-6379",
   email: "info@swfoamtech.com",
-  image: "https://swfoamtech.com/og-image.jpg",
-  logo: "https://swfoamtech.com/logo.jpg",
+  image: "https://www.swfoamtech.com/og-image.jpg",
+  logo: "https://www.swfoamtech.com/logo.jpg",
   slogan: "Creating The Perfect Fit",
   address: {
     "@type": "PostalAddress",
