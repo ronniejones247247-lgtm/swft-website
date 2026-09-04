@@ -206,11 +206,24 @@ export default function Footer() {
                   How did you hear about us?
                   <select name="referral" className={styles.formSelect}>
                     <option value="">Select…</option>
-                    <option value="Google Search">Google Search</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Word of Mouth">Word of Mouth</option>
-                    <option value="Returning Customer">Returning Customer</option>
-                    <option value="Other">Other</option>
+                    <optgroup label="Search Engines">
+                      <option value="Google">Google</option>
+                      <option value="Bing">Bing</option>
+                      <option value="Yahoo">Yahoo</option>
+                      <option value="DuckDuckGo">DuckDuckGo</option>
+                      <option value="AI assistant (ChatGPT, Copilot, etc.)">AI assistant (ChatGPT, Copilot, etc.)</option>
+                    </optgroup>
+                    <optgroup label="Social Media">
+                      <option value="Facebook">Facebook</option>
+                      <option value="LinkedIn">LinkedIn</option>
+                      <option value="Other social media">Other social media</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option value="Word of Mouth / Referral">Word of Mouth / Referral</option>
+                      <option value="Returning Customer">Returning Customer</option>
+                      <option value="Trade Show / Event">Trade Show / Event</option>
+                      <option value="Other">Other</option>
+                    </optgroup>
                   </select>
                 </label>
 
