@@ -256,6 +256,7 @@ export default function Footer() {
             <a href="/services">Services</a>
             <a href="/markets">Markets</a>
             <a href="/#visualizer">Visualizer</a>
+            <a href="/faq">FAQ</a>
             <a href="/about">About</a>
             <a href="/#contact">Contact</a>
           </div>

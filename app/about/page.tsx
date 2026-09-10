@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import styles from './about.module.css';
+import { breadcrumbJsonLd } from '@/lib/breadcrumbJsonLd';
 
 export const metadata: Metadata = {
-  title: 'About Us | SouthWestern Foam Technologies',
-  description: 'Family-owned for 30 years, SWFT operates an 8 acre fabrication facility in Belton, TX with a quality system modeled on ISO 9001:2015.',
+  title: 'About SWFT | Family-Owned Foam Fabricator in Belton, TX',
+  description: 'Family-owned for 30+ years, SouthWestern Foam Technologies operates an 8 acre foam fabrication facility in Belton, TX with a quality system modeled on ISO 9001:2015.',
   alternates: { canonical: '/about' },
 };
 
@@ -38,6 +39,10 @@ const moldedCapabilities = [
 export default function AboutPage() {
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd([{ name: 'About', path: '/about' }])) }}
+      />
 
       {/* Hero */}
       <section className={styles.hero}>

@@ -7,20 +7,20 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.swfoamtech.com"),
-  title: "SouthWestern Foam Technologies | Custom Foam Solutions",
-  description: "Custom foam fabrication in Belton, TX — cut-to-size, CNC machining, die pressing, lamination, and JIT delivery across the US and Mexico. Family-owned for 30+ years.",
+  title: "Custom Foam Fabrication in Texas | SouthWestern Foam Technologies",
+  description: "Custom foam cutting and fabrication in Belton, TX — CNC foam cutting, die-cut foam inserts, cushions, lamination, and JIT delivery across the US and Mexico. Family-owned for 30+ years.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "SouthWestern Foam Technologies",
-    title: "SouthWestern Foam Technologies | Custom Foam Solutions",
-    description: "Custom foam fabrication in Belton, TX — cut-to-size, CNC machining, die pressing, lamination, and JIT delivery across the US and Mexico.",
+    title: "Custom Foam Fabrication in Texas | SouthWestern Foam Technologies",
+    description: "Custom foam cutting and fabrication in Belton, TX — CNC foam cutting, die-cut foam inserts, cushions, lamination, and JIT delivery across the US and Mexico.",
     url: "https://www.swfoamtech.com",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "SouthWestern Foam Technologies delivery trucks" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SouthWestern Foam Technologies | Custom Foam Solutions",
+    title: "Custom Foam Fabrication in Texas | SouthWestern Foam Technologies",
     description: "Custom foam fabrication in Belton, TX — cut-to-size, CNC machining, die pressing, lamination, and JIT delivery across the US and Mexico.",
     images: ["/og-image.jpg"],
   },
@@ -48,6 +48,7 @@ const localBusinessJsonLd = {
     addressCountry: "US",
   },
   geo: { "@type": "GeoCoordinates", latitude: 31.0663, longitude: -97.4614 },
+  hasMap: "https://www.google.com/maps/search/?api=1&query=SouthWestern+Foam+Technologies+1106+Industrial+Park+Rd+Belton+TX+76513",
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

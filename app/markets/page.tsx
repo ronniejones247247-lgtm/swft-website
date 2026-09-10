@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import styles from './markets.module.css';
+import { breadcrumbJsonLd } from '@/lib/breadcrumbJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Markets Served | SouthWestern Foam Technologies',
-  description: 'Texas foam fabricator serving marine, medical, automotive, oilfield, transportation, packaging, and seating industries across the US and Mexico.',
+  title: 'Foam for Marine, Medical, Automotive & More | SWFT Markets',
+  description: 'Texas foam fabricator serving marine, medical, automotive, oilfield, transportation, packaging, and seating industries — boat cushions, pressure-relief foam, die-cut inserts, and more.',
   alternates: { canonical: '/markets' },
 };
 
@@ -132,6 +133,10 @@ const markets = [
 export default function MarketsPage() {
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd([{ name: 'Markets', path: '/markets' }])) }}
+      />
 
       {/* Hero */}
       <section className={styles.hero}>

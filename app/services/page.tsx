@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import styles from './services.module.css';
+import { breadcrumbJsonLd } from '@/lib/breadcrumbJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Services & Capabilities | SouthWestern Foam Technologies',
-  description: 'Full-service foam fabrication in Belton, TX: CNC cutting, lamination, die pressing, convoluting, and just-in-time delivery throughout the US and Mexico.',
+  title: 'CNC Foam Cutting, Die Cutting & Lamination Services | SWFT',
+  description: 'Full-service foam fabrication in Belton, TX: CNC foam cutting, die cutting, lamination, convoluting, memory foam, closed cell, and just-in-time delivery throughout the US and Mexico.',
   alternates: { canonical: '/services' },
 };
 
@@ -67,6 +68,10 @@ const designCapabilities = [
 export default function ServicesPage() {
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd([{ name: 'Services & Capabilities', path: '/services' }])) }}
+      />
 
       {/* Hero */}
       <section className={styles.hero}>

@@ -11,6 +11,7 @@ const links = [
   { label: 'Markets',    href: '/markets' },
   { label: 'Cushions',   href: '/#cushions' },
   { label: 'Visualizer', href: '/#visualizer' },
+  { label: 'FAQ',        href: '/faq' },
   { label: 'About',      href: '/about' },
   { label: 'Contact',    href: '/#contact' },
 ];
