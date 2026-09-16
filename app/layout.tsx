@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Custom Foam Fabrication in Texas | SouthWestern Foam Technologies",
   description: "Custom foam cutting and fabrication in Belton, TX — CNC foam cutting, die-cut foam inserts, cushions, lamination, and JIT delivery across the US and Mexico. Family-owned for 30+ years.",
   alternates: { canonical: "/" },
+  verification: { google: "TbOLsr3dnqKLRFJDYjfenWVnt-2uq8XmrvKxfVSFofI" },
   openGraph: {
     type: "website",
     siteName: "SouthWestern Foam Technologies",
