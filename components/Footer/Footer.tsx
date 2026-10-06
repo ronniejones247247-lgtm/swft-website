@@ -166,19 +166,19 @@ export default function Footer() {
                 <div className={styles.dimRow}>
                   <label className={styles.formLabel}>
                     Length (in)
-                    <input name="length_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24"
+                    <input name="length_in" type="number" min="0" step="any" className={styles.formInput} placeholder="24"
                       value={lengthIn} onChange={e => setLengthIn(e.target.value)} />
                   </label>
                   <span className={styles.dimX}>×</span>
                   <label className={styles.formLabel}>
                     Width (in)
-                    <input name="width_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="24"
+                    <input name="width_in" type="number" min="0" step="any" className={styles.formInput} placeholder="24"
                       value={widthIn} onChange={e => setWidthIn(e.target.value)} />
                   </label>
                   <span className={styles.dimX}>×</span>
                   <label className={styles.formLabel}>
                     Thickness (in)
-                    <input name="thickness_in" type="number" min="0.1" step="0.5" className={styles.formInput} placeholder="4"
+                    <input name="thickness_in" type="number" min="0" step="any" className={styles.formInput} placeholder="4"
                       value={thicknessIn} onChange={e => setThicknessIn(e.target.value)} />
                   </label>
                 </div>

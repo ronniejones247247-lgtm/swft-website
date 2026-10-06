@@ -266,17 +266,17 @@ export default function FoamVisualizer() {
           <div className={styles.inputGroup}>
             <label className={styles.inputLabel}>
               Length ({unitLabel})
-              <input type="number" min="0.1" step="0.5" value={length}
+              <input type="number" min="0" step="any" value={length}
                 onChange={handleChange(setLength)} className={styles.input} placeholder="e.g. 24" />
             </label>
             <label className={styles.inputLabel}>
               Width ({unitLabel})
-              <input type="number" min="0.1" step="0.5" value={width}
+              <input type="number" min="0" step="any" value={width}
                 onChange={handleChange(setWidth)} className={styles.input} placeholder="e.g. 24" />
             </label>
             <label className={styles.inputLabel}>
               Thickness ({unitLabel})
-              <input type="number" min="0.1" step="0.5" value={height}
+              <input type="number" min="0" step="any" value={height}
                 onChange={handleChange(setHeight)} className={styles.input} placeholder="e.g. 4" />
             </label>
             <label className={styles.inputLabel}>
